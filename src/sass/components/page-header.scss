@@ -1,49 +1,43 @@
 .page-header {
 
-  overflow-x: hidden;
+  position: fixed;
+  right: 0;
+  left: 0;
 
   &__inner {
-    @include container();
-  }
-
-  &__row {
-    @include row();
-  }
-
-  &__left {
-    @include col(12);
-    @include col(lg, 8);
     display: flex;
+    align-items: center;
     justify-content: space-between;
-  }
-
-  &__right {
-    @include col(12);
-    @include col(lg, 4);
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 50vw;
-      background: linear-gradient(178.81deg, #96B1BC 21.1%, #75929E 82%);
-    }
-
+    max-width: $screen-xl;
+    margin: 0 auto;
   }
 
   &__logo {
     display: flex;
-    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 18px 0;
+
+    @media (min-width: $screen-md) {
+      position: static;
+      transform: translateX(0);
+      margin-right: auto;
+      margin-left: 15px;
+    }
   }
 
   &__search-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 100%;
-    padding: 0 20px;
+    background: linear-gradient(178.81deg, #96B1BC 21.1%, #75929E 82%);
+
+    @media (min-width: $screen-md) {
+      height: 70px;
+      padding: 18px 30px;
+    }
+
+
   }
 }

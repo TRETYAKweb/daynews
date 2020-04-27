@@ -1,16 +1,35 @@
 .main-nav {
+  $block-name: &;
+
+
+  @media (max-width: $menu-desktop-width) {
+    position: absolute;
+    top: 70px;
+    left: -100vw;
+    transition: left $transition-time, right $transition-time;
+  }
+
+  @media (min-width: $screen-md) {
+    right: 390px;
+  }
 
   &__list {
     @include reset-list();
-    display: flex;
-    align-items: center;
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__link {
     display: inline-block;
     vertical-align: middle;
-    padding: 30px 20px;
     text-decoration: none;
+
+    @media (min-width: $screen-xl) {
+      padding: 24px 20px;
+    }
 
     &:hover {
       text-decoration: none;
@@ -19,5 +38,37 @@
     &:focus {
       text-decoration: none;
     }
+  }
+
+  &--opened {
+
+    @media (min-width: $screen-md) and (max-width: $screen-xl) {
+      right: 390px !important;
+    }
+
+    @media (max-width: $menu-desktop-width) {
+      right: 0;
+      left: 0;
+      background: linear-gradient(168.19deg, rgba(28, 0, 202, 0) 6.71%, rgba(9, 48, 134, 0.8) 88.14%), rgba(26, 76, 187, 0.7);
+      backdrop-filter: blur(15px);
+
+
+      #{$block-name}__list {
+        height: 100vh;
+        padding-top: 100px;
+        overflow-y: auto;
+      }
+
+      #{$block-name}__link {
+        width: 100%;
+        padding: 15px 0;
+        font-family: 'Gilroy', Arial, sans-serif;
+        font-size: $font-size-h1;
+        text-align: center;
+        color: #fff;
+      }
+
+    }
+
   }
 }

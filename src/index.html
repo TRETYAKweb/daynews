@@ -14,37 +14,34 @@
     <div class="page__content">
       <header class="page-header">
         <div class="page-header__inner">
-          <div class="page-header__row">
-            <div class="page-header__left">
-              <a href="#" class="page-header__logo logo">
-                <img src="images/logo.svg" width="130" height="23" alt="logo" class="logo__picture">
-              </a>
-              <nav class="main-nav">
-                <ul class="main-nav__list">
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Политика</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Экономика</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Общество</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Происшествия</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Спорт</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="page-header__right">
-              <form action="#" class="page-header__search-form search-form">
-                <input class="search-form__input" type="text" placeholder="Поиск">
-                <button class="search-form__btn" aria-label="поиск">
-                  <svg class="search-form__icon" width="20" height="20">
-                    <use xlink:href="images/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
-              </form>
-            </div>
-          </div>
+          <a href="#" class="page-header__logo logo">
+            <img src="images/logo.svg" width="130" height="23" alt="logo" class="logo__picture">
+          </a>
+          <nav class="main-nav" id="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Политика</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Экономика</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Общество</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Происшествия</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Спорт</a></li>
+            </ul>
+          </nav>
+          <button class="burger" aria-label="открыть меню" data-target-id="main-nav" data-target-class-toggle="main-nav--opened">
+            <span>Открыть меню</span>
+          </button>
+          <form action="#" class="page-header__search-form search-form" id="search-form">
+            <input class="search-form__input" type="text" placeholder="Поиск">
+            <button class="search-form__btn js-search-form-btn" aria-label="поиск">
+              <svg class="search-form__icon" width="20" height="20">
+                <use xlink:href="images/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </header>
     </div>
     <div class="page__footer-wrapper">
-      footer
+      11111
     </div>
   </div>
 

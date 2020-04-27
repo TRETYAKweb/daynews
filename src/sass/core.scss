@@ -45,6 +45,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   display: flex;           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
   flex-direction: column;  // и прижимаем footer в IE 10-11
