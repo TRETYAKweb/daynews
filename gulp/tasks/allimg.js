@@ -1,6 +1,6 @@
 module.exports = () => {
   $.gulp.task('allimg', () => {
-    return $.gulp.src('./src/img/**/*.{jpg,png,svg}')
-        .pipe($.gulp.dest('./build/img'));
+    return $.gulp.src('./src/images/*.{jpg,png,svg}')
+        .pipe($.gulp.dest('./build/images'));
   });
 };

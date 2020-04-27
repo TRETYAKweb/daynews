@@ -1,22 +1,15 @@
 // Базовые цвета https://colorscheme.ru/color-converter.html
 
-$black:                       hsl(0, 0%, 0%);
-$gray-darkest:                hsl(0, 0%, 10%);
-$gray-darker:                 hsl(0, 0%, 20%);
-$gray-darken:                 hsl(0, 0%, 30%);
-$gray-dark:                   hsl(0, 0%, 40%);
-$gray:                        hsl(0, 0%, 50%);
-$gray-light:                  hsl(0, 0%, 60%);
-$gray-lighten:                hsl(0, 0%, 70%);
-$gray-lighter:                hsl(0, 0%, 80%);
-$gray-lightest:               hsl(0, 0%, 90%);
-$white:                       rgba(255, 255, 255, 1);
+$black:                       #282B30;
 
-$color-main:                  #C66C49;
-$color-second:                #FFFAF2;
-$color-success:               hsl(120, 39%, 54%);
-$color-danger:                hsl(2, 64%, 58%);
-$color-warning:               hsl(35, 84%, 62%);
+$primary-main: #1a4cbb;
+$primary-dark: #002372;
+
+$secondary-main: #96B2BD;
+$secondary-dark: #60808D;
+$secondary-light: #B6CAD1;
+
+$btn-color: linear-gradient(197.26deg, #1A4CBB 33.97%, #4679EC 139.06%);
 
 $color-vk:                    #4a76a8;
 $color-fb:                    #4267b2;
@@ -27,25 +20,24 @@ $color-gh:                    #24292e;
 
 // Семантические цвета
 
-$text-color:                  #333;
-$text-color-muted:            $gray;
-$body-bg:                     #25282c;
+$text-color:                  $black;
 
-$link-color:                  $white;
-$link-color--hover:           darken($color-main, 15%);
+$link-color:                  $black;
+$link-color--hover:           $primary-main;
 
-$second-color: #23b3fe;
-
-$border-color:                $gray-lighten;
-
+$border-color:                $black;
 
 
 // Базовая типографика
 
-$font-size:                   15px;
+$font-size:                   14px;
 
-$font-size-h1:                64px;
-$font-size-h2:                24px;
+$font-size-h1:                38px;
+$font-size-h2:                27px;
+$font-size-h3:                24px;
+$font-size-h4:                18px;
+$font-size-h5:                17px;
+$font-size-h6:                16px;
 
 $font-size-sm:                0.75em; // 12px от 16px
 

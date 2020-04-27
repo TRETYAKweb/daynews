@@ -4,10 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GULP Starter-Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>GULP Starter-Kit</h1>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="page-header__left">
+        <a href="#" class="logo">
+          <img src="images/logo.svg" width="130" height="23" alt="logo" class="logo__picture">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Политика</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Экономика</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Общество</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Происшествия</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Спорт</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__right">
+        <form action="#" class="search-form">
+          <input class="search-form__input" type="text">
+          <svg width="50" height="50" fill="red">
+            <use xlink:href="images/sprite.svg#icon-plus"></use>
+          </svg>
+        </form>
+      </div>
+    </div>
+  </header>
 </body>
 </html>

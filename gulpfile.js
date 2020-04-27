@@ -6,7 +6,7 @@ global.$ = {
   del: require('del'),
   imageminJpegRecompress: require('imagemin-jpeg-recompress'),
   pngquant: require('imagemin-pngquant'),
-  config: require('./gulp/config')
+  config: require('./gulp/config'),
 };
 
 $.config.forEach((path) => {
