@@ -1,6 +1,47 @@
 .page-header {
 
+  overflow-x: hidden;
+
   &__inner {
     @include container();
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__left {
+    @include col(12);
+    @include col(lg, 8);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__right {
+    @include col(12);
+    @include col(lg, 4);
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 50vw;
+      background: linear-gradient(178.81deg, #96B1BC 21.1%, #75929E 82%);
+    }
+
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-form {
+    height: 100%;
+    padding: 0 20px;
   }
 }

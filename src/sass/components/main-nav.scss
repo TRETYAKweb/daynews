@@ -1,0 +1,23 @@
+.main-nav {
+
+  &__list {
+    @include reset-list();
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 30px 20px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}

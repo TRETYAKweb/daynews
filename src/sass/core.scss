@@ -145,12 +145,14 @@ img {
 
 a {
   color: $link-color;
+  text-decoration: none;
   background-color: transparent;
   transition: color $transition-time;
 
   &:hover,
   &:focus {
     color: $link-color--hover;
+    text-decoration: underline;
   }
 
   // &:visited {

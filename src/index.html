@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="page no-js" lang="en">
+<html class="page no-js" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +8,46 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__inner">
-      <div class="page-header__left">
-        <a href="#" class="logo">
-          <img src="images/logo.svg" width="130" height="23" alt="logo" class="logo__picture">
-        </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Политика</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Экономика</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Общество</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Происшествия</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Спорт</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="page-header__right">
-        <form action="#" class="search-form">
-          <input class="search-form__input" type="text">
-          <svg width="50" height="50" fill="red">
-            <use xlink:href="images/sprite.svg#icon-plus"></use>
-          </svg>
-        </form>
-      </div>
+  <noscript>У вас отключен JavaScript. Это пугает.</noscript>
+
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header">
+        <div class="page-header__inner">
+          <div class="page-header__row">
+            <div class="page-header__left">
+              <a href="#" class="page-header__logo logo">
+                <img src="images/logo.svg" width="130" height="23" alt="logo" class="logo__picture">
+              </a>
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item"><a href="#" class="main-nav__link">Политика</a></li>
+                  <li class="main-nav__item"><a href="#" class="main-nav__link">Экономика</a></li>
+                  <li class="main-nav__item"><a href="#" class="main-nav__link">Общество</a></li>
+                  <li class="main-nav__item"><a href="#" class="main-nav__link">Происшествия</a></li>
+                  <li class="main-nav__item"><a href="#" class="main-nav__link">Спорт</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="page-header__right">
+              <form action="#" class="page-header__search-form search-form">
+                <input class="search-form__input" type="text" placeholder="Поиск">
+                <button class="search-form__btn" aria-label="поиск">
+                  <svg class="search-form__icon" width="20" height="20">
+                    <use xlink:href="images/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
     </div>
-  </header>
+    <div class="page__footer-wrapper">
+      footer
+    </div>
+  </div>
+
+  <script src="js/bundle.js"></script>
 </body>
 </html>
